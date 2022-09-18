@@ -1,0 +1,24 @@
+[package]
+name = "MRG-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Illumi"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.18.2", features = ["full"] }
+futures = "*"
+reqwest = { version = "*", features = ["json"]}
+serde = { version = "1.0", features = ["derive"] }
+tokio-retry = "0.3"
+
+[profile.release]
+overflow-checks = true
+
+[profile.dev]
+opt-level = 3
+
+[[bin]]
+name = "mirager_rust"
+path = "src/main.rs"
