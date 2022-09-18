@@ -5,7 +5,7 @@ mod auction_house;
 async fn main()
 {
 
-    let runtime= Instant::now();
+    let runtime = Instant::now();
 
     auction_house::AuctionHandler::new(60).collect_auctions(|_auction_house_|
         async move
