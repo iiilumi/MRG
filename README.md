@@ -9,3 +9,11 @@ HTTP client handler for MRG made in Rust
 - [ ] Flipping algorythm with demand, supply and anti market manipulations
 - [ ] Real time communication with customers (using sockets)
 - [ ] Benchmarking on Google Cloud
+
+* Using optimization level 3
+```
+cargo check
+```
+```
+cargo run
+```
