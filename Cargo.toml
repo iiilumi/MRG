@@ -13,10 +13,10 @@ reqwest = { version = "*", features = ["json"]}
 serde = { version = "1.0", features = ["derive"] }
 tokio-retry = "0.3"
 
-[profile.release]
-overflow-checks = true
-
 [profile.dev]
+opti-level = 3
+
+[profile.dev.package."*"]
 opt-level = 3
 
 [[bin]]
