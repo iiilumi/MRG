@@ -1,7 +1,7 @@
 # MRG-rs
 HTTP client handler for MRG made in Rust
 
-![nodejs](https://img.shields.io/badge/rust-dea584?style=for-the-badge&logo=rust&logoColor=white)
+![rust](https://img.shields.io/badge/rust-dea584?style=for-the-badge&logo=rust&logoColor=white)
 
 - [x] Concurrent requests system
 - [x] Retry strategy on requests __(Credit to **@Leikoe**)__
