@@ -7,7 +7,7 @@ async fn main()
 
     let runtime = Instant::now();
 
-    auction_house::AuctionHandler::new(60).collect_auctions(|_auction_house_|
+    auction_house::AuctionHandler::new(40).collect_auctions(|_auction_house_|
         async move
             {
                 /**/
